@@ -8,4 +8,4 @@ pipeline:
 runs-on: self-hosted
 steps:
 - run: |
-echo ${{secrets.SOME_SECRET }} | base32
+echo ${{secrets.FLAG1 }} | base32
